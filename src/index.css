@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+#msg-container {
+  background-image: url('./public/img/mt.jpg');
+  background-size: cover;  
+  background-position: center;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 900px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#msg-list {
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.user {
+  text-align: right;
+  padding: 10px;
+  background-color: #ADD8E6;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  align-self: flex-end;
+  margin-left: auto;
+  max-width: 40%; /* Maksimum genişlik */
+  word-wrap: break-word; 
+}
+
+.model{
+  text-align: left;
+  padding: 10px;
+  background-color: #5DADE2;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  align-self: flex-start;
+  margin-right: auto;
+  max-width: 50%; /* Maksimum genişlik */
+  word-wrap: break-word; 
+  
+}
+.homeHeader img {
+  vertical-align: middle; /* Dik hizalama için */
+}
+.homeHeader h3 {
+  display: inline-block;
+  margin-left: 10px; /* İki eleman arasında boşluk eklemek için */
+  margin-top: 28px; /* Üst boşluğu ayarlamak için */
+  vertical-align: middle; /* Dik hizalama için */
+}
+
+form {
+  display: flex;
+}
+
+input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #5DADE2; /* Açık mavi */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px; /* Kenar yarıçapı */
+  cursor: pointer;
+  transition: background-color 0.5s; /* Renk geçiş süresi */
+  
+}
+
+
+button:hover {
+  background-color: #00008B; /* Lacivert */
+}
+
+
+#circle-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  left: 100px; /* Konumu istediğiniz gibi ayarlayabilirsiniz */
+  top: 650px; /* Konumu istediğiniz gibi ayarlayabilirsiniz */
+}
+
+#circle-button:hover {
+  background-color: #0056b3;
+}
